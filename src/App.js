@@ -22,6 +22,7 @@ class App extends Component {
 
   handleEnterKey(event) {
     if(event.charCode === 13) {
+      event.preventDefault();
       this.changeDeadline();
     }
   }
